@@ -13,7 +13,7 @@ public class CancionSW {
         super(); 
     }
     
-    public ArrayList<Cancion> listarCanciones(){
+    public ArrayList<Cancion> listarCanciones() throws Exception{
         return ServicioCancion.getCanciones();
     }
     
