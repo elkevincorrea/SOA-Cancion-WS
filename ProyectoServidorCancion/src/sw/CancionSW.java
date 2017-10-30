@@ -17,19 +17,19 @@ public class CancionSW {
         return ServicioCancion.getCanciones();
     }
     
-    public boolean adicionarCancion(Cancion c){
-        return ServicioCancion.agregarCancion(c);
+    public void adicionarCancion(Cancion c) throws Exception{
+        ServicioCancion.agregarCancion(c);
     }
     
-    public Cancion buscarCancion(int id){
+    public Cancion buscarCancion(int id) throws Exception{
         return ServicioCancion.buscarCancion(id);
     }
     
-    public boolean actualizarCancion(Cancion c){
-        return ServicioCancion.actualizarCancion(c);
+    public void actualizarCancion(Cancion c) throws Exception{
+        ServicioCancion.actualizarCancion(c);
     }
     
-    public boolean eliminarCancion(int id){
-        return ServicioCancion.eliminarCancion(id);
+    public void eliminarCancion(int id) throws Exception{
+        ServicioCancion.eliminarCancion(id);
     }
 }
